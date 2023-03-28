@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".BottomSheetFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <!-- Inside text input layout add
+              an auto complete text view
+                and make its input type to none-->
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:text="Select Ringtone" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+         android:paddingTop="10dp"
+         android:paddingBottom="10dp"
+        android:layout_marginBottom="150dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="50dp"
+            android:fontFamily="sans-serif-light"
+            android:text="vibrate"
+            android:textColor="@color/black"
+
+
+            android:textSize="18sp" />
+
+        <Switch
+            android:id="@+id/set_vibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
